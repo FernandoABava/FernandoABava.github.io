@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mi Frágil Masculinidad</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <!-- Use it like any other HTML element -->
+    <model-viewer 
+      alt="Una banana de arcilla" 
+      src="assets/FragilMasculinidad.glb" 
+      ar 
+      ar-modes="webxr scene-viewer quick-look"
+      ar-button="ar-button"
+      poster="assets/poster.png" 
+      shadow-intensity="1" 
+      camera-controls 
+      disable-pan
+      disable-zoom
+      touch-action="pan-y">
+      <button slot="ar-button" id="ar-button" class="btn banana">
+        <img src="assets/ar-button.png" alt="ver en realidad aumentada">
+      </button>        
+    </model-viewer>
+    
+    <video 
+           src="assets/salida.mp4"
+           autoplay 
+           muted 
+           loop
+           height="100%"
+          >
+    </video>
+    
+    <button id="movie-button" class="btn rueda" onclick="switchScreen('movie')">
+      <img src="assets/video-button.png" alt="ver película">
+    </button>
+    
+    <button id="D-button" class="btn banana center" onclick="switchScreen('model-viewer')">
+      <img src="assets/3D-button.png" alt="ver película">
+    </button>
+  
+    <script src="./script.js" defer></script>
+  </body>
+</html>
