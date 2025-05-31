@@ -18,7 +18,7 @@ html {
     line-height: 1.5;
     background: #000;
     
-    background-image: url(assets/fondo_blur.jpg);
+    background-image: url(assets/fondo_blur.JPG);
     background-position: center;
     background-size: cover;
     
@@ -37,7 +37,7 @@ html {
     position: fixed;
     width: 100vw;
     height: 100svh;
-    background-image: url(assets/fondo.jpg);
+    background-image: url(assets/fondo.JPG);
     background-position: center;
     background-size: cover;
     
